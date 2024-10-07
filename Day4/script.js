@@ -315,7 +315,7 @@ modeBtn.addEventListener("click", () => {
 
     }
 
-    // console.log(currMode);
+    console.log(currMode);
 })
 
 
