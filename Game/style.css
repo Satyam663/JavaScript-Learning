@@ -5,9 +5,9 @@
     text-align: center;
 }
 
-body {
+/* body {
     background-color: grey;
-}
+} */
 
 h1 {
     background-color: #081b31;
@@ -74,4 +74,82 @@ img {
     padding: 1rem;
     border: 1rem;
     border-radius: 1rem;
+}
+
+
+
+/* ------------------------------------------------ */
+
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        /* Stack choices vertically on smaller screens */
+        gap: 1.5rem;
+        /* Reduce gap between choices */
+    }
+
+    .choice {
+        height: 120px;
+        /* Adjust size for mobile */
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+    }
+
+    .score_board {
+        flex-direction: column;
+        /* Stack the score vertically */
+        gap: 1rem;
+    }
+
+    #user_score,
+    #comp_score {
+        font-size: 2.5rem;
+        /* Smaller score text for mobile */
+    }
+
+    #msg {
+        font-size: 1.25rem;
+        /* Smaller font for the message */
+    }
+}
+
+@media (max-width: 480px) {
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 100%;
+        /* Ensures images fit the smaller choice container */
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        height: 4rem;
+        /* Adjusted height for mobile */
+        line-height: 4rem;
+    }
+
+    .score_board {
+        font-size: 1.25rem;
+        /* Smaller font for scores */
+    }
+
+    #user_score,
+    #comp_score {
+        font-size: 2rem;
+        /* Reduced score font size for mobile */
+    }
+
+    #msg {
+        font-size: 1rem;
+    }
 }
